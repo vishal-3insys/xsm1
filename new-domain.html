@@ -1,0 +1,410 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>New Domain | 3Insys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="The Cross Integration Suite from 3Insys takes a 360-degree approach to SYSTEM, DATA, and SECURITY" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- preloader css -->
+    <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-topbar="dark">
+
+    <!-- <body data-layout="horizontal"> -->
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="home.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-icon.svg" alt="" height="42">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-sm-w.svg" alt="" height="45">
+                            </span>
+                        </a>
+
+                        <a href="home.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-icon.svg" alt="" height="42">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-sm-w.svg" alt="" height="45">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- App Search-->
+
+                </div>
+
+                <div class="row d-flex flex-grow-1" style="">
+                    <div class="col-xl-6 col-md-10">
+                        <form class="app-search p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="search" class="form-control w-100" placeholder="Search ..." aria-label="Search Result">
+
+                                    <button class="btn btn-primary d-sm-inline-block" type="submit"><i data-feather="search" class="icon-lg"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+
+
+
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item" id="mode-setting-btn">
+                            <i data-feather="moon" class="icon-lg layout-mode-dark"></i>
+                            <i data-feather="sun" class="icon-lg layout-mode-light"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" title="Notifications" class="btn header-item noti-icon position-relative" id="page-header-notifications-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="bell" class="icon-lg"></i>
+                            <span class="badge bg-danger rounded-pill">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                             aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small text-reset text-decoration-underline"> Unread (2)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <!--<h6 class="mb-1">James Lemire</h6>-->
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">New Organization has been created.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>30 minutes ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <!--<h6 class="mb-1">James Lemire</h6>-->
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">New Application has been onboarded.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" title="Organization" class="btn header-item noti-icon position-relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg><span class="badge bg-danger rounded-pill">1</span>
+                        </button>
+
+                    </div>
+                    <div class="dropdown d-flex">
+                        <button type="button" class="btn header-item bg-soft-light border-start border-end" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                 alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium">Super Admin</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="profile-mng.html"><i class="mdi mdi-clipboard-account-outline font-size-16 align-middle me-1"></i> My Account</a>
+                            <a class="dropdown-item" href="credentials-mng.html"><i class="mdi mdi-key-change font-size-16 align-middle me-1"></i> Manage Credentials</a>
+                            <a class="dropdown-item" href="account-rec.html"><i class="mdi mdi-ballot-recount font-size-16 align-middle me-1"></i> Manage Account Recovery</a>
+
+                            <a class="dropdown-item" href="index.html"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+
+
+                        <li>
+                            <a href="home.html">
+                                <i data-feather="home"></i>
+                                <span class="badge rounded-pill bg-soft-success text-success float-end"></span>
+                                <span data-key="t-dashboard">Home</span>
+                            </a>
+                        </li> <!--Home-->
+                        <li>
+                            <a href="#" class="has-arrow">
+                                <i class="mdi mdi-domain"></i>
+                                <span data-key="t-dashboard">
+                                    Domain Management
+                                </span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="new-domain.html"> Create Domain</a></li>
+                                <li><a href="modify-domain.html" data-key="t-product-detail"> Modify Domain</a></li>
+                                <li><a href="domain-management.html" data-key="t-orders">Manage Domain</a></li>
+
+                            </ul>
+                        </li>  <!--Domain-->
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <!-- Sidebar -->
+        </div>
+
+
+
+
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <!--<h4 class="mb-sm-0 font-size-18">Form Validation</h4>-->
+
+                                <div class="page-title-left">
+                                    <ol class="breadcrumb m-0">
+                                        <!--<li class="breadcrumb-item"><a href="home.html">Home</a></li>-->
+
+                                        <li class="breadcrumb-item"><a href="new-domain.html">Domain Management</a></li>
+                                        <li class="breadcrumb-item active">Create Domain</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Create Domain</h4>
+
+                                </div>
+                                <div class="card-body">
+                                    <form class="needs-validation" data-submit novalidate action="#">
+                                        <div class="row">
+
+
+                                            <div class="offset-md-6"></div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustom01">Domain Name</label>
+                                                    <input type="text" list="domainlist" class="form-control" id="validationCustom01" placeholder="Domain Name" minlength="5" maxlength="10" required>
+
+                                                    <!--<input type="text" minlength="5" maxlength="10"/>-->
+                                                    <datalist id="domainlist">
+                                                        <option>3insys.com</option>
+                                                        <option>itron.com</option>
+                                                        <option>dwp.com</option>
+                                                        <option>oms.com</option>
+                                                    </datalist>
+                                                    <div class="invalid-feedback">
+                                                        Please enter a Domain Name.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustom02">Domain Description</label>
+                                                    <!--<input type="text" class="form-control" id="validationCustom02" placeholder="Domain Description" maxlength="250" required>-->
+                                                    <textarea id="TextArea1" rows="1" class="form-control" cols="20" placeholder="Domain Description" maxlength="250" required></textarea>
+                                                    <div class="invalid-feedback">
+                                                        Please enter a Domain Description.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="my-2">
+                                                    <label for="domUsername" class="form-label">First Name</label>
+                                                    <input type="text" id="domUsername" class="form-control" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="my-2">
+                                                    <label for="domUsername" class="form-label">Last Name</label>
+                                                    <input type="text" id="domUsername" class="form-control" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="my-2">
+                                                    <label for="dompassword" class="form-label">Create Password</label>
+                                                    <input type="password" id="dompassword" class="form-control" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="my-2">
+                                                    <label for="domConfirmPassword " class="form-label">Confirm Password </label>
+                                                    <input type="password" id="domConfirmPassword" class="form-control" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="my-2">
+                                                    <label for="domMobile" class="form-label">Mobile Number </label>
+                                                    <input type="tel"pattern="[0-9]{10}" id="domMobile" class="form-control" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="my-2">
+                                                    <label for="domEmail" class="form-label">Email</label>
+                                                    <input type="email" id="domEmail" class="form-control" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustom02">Domain Status</label>
+                                                    <div class="d-flex flex-wrap gap-2">
+                                                        <input class="d-none" type="checkbox" data-onoff="one" id="switch1" data-switch="none" checked />
+                                                        <label for="switch1" data-on-label="On" data-off-label="Off"></label>
+                                                    </div>
+
+
+                                                    <div class="invalid-feedback">
+                                                        Please enter a Domain Status.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <button class="btn btn-primary mx-2" type="submit">Create</button>
+                                        <button class="btn btn-primary mx-2" type="reset">Clear</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                        </div> <!-- end col -->
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                    <!-- end row -->
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            2022 © XSM.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Developed by <a href="https://www.3insys.com/" target="_blank" class="text-decoration-underline">3Insys</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <!-- pace js -->
+    <script src="assets/libs/pace-js/pace.min.js"></script>
+    <script src="assets/libs/sweetalert2/sweetalert2.js"></script>
+    <!-- pristine js -->
+    <script src="assets/libs/pristinejs/pristine.min.js"></script>
+    <!-- form validation -->
+    <script src="assets/js/pages/form-validation.init.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        document.querySelector("[data-submit]").addEventListener("submit", function () {
+            Swal.fire({
+                title: "Domain Created Successfully!",
+
+                icon: "success",
+                confirmButtonColor: "#1c84ee"
+            })
+        });
+        
+    </script>
+
+</body>
+
+</html>

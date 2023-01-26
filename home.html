@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Home | 3Insys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="The Cross Integration Suite from 3Insys takes a 360-degree approach to SYSTEM, DATA, and SECURITY" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- plugin css -->
+    <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Sweet Alert-->
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- preloader css -->
+    <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-topbar="dark">
+
+    <!-- <body data-layout="horizontal"> -->
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="home.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-icon.svg" alt="" height="42">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-sm-w.svg" alt="" height="45">
+                            </span>
+                        </a>
+
+                        <a href="home.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-icon.svg" alt="" height="42">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-sm-w.svg" alt="" height="45">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- App Search-->
+
+                </div>
+
+                <div class="row d-flex flex-grow-1" style="">
+                    <div class="col-xl-6 col-md-10">
+                        <form class="app-search p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="search" class="form-control w-100" placeholder="Search ..." aria-label="Search Result">
+
+                                    <button class="btn btn-primary d-sm-inline-block" type="submit"><i data-feather="search" class="icon-lg"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+
+
+
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item" id="mode-setting-btn">
+                            <i data-feather="moon" class="icon-lg layout-mode-dark"></i>
+                            <i data-feather="sun" class="icon-lg layout-mode-light"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" title="Notifications" class="btn header-item noti-icon position-relative" id="page-header-notifications-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="bell" class="icon-lg"></i>
+                            <span class="badge bg-danger rounded-pill">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                             aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small text-reset text-decoration-underline"> Unread (2)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <!--<h6 class="mb-1">James Lemire</h6>-->
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">New Organization has been created.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>30 minutes ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <!--<h6 class="mb-1">James Lemire</h6>-->
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">New Application has been onboarded.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" title="Organization" class="btn header-item noti-icon position-relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg><span class="badge bg-danger rounded-pill">1</span>
+                        </button>
+
+                    </div>
+                    <div class="dropdown d-flex">
+                        <button type="button" class="btn header-item bg-soft-light border-start border-end" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                 alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium">Super Admin</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="profile-mng.html"><i class="mdi mdi-clipboard-account-outline font-size-16 align-middle me-1"></i> My Account</a>
+                            <a class="dropdown-item" href="credentials-mng.html"><i class="mdi mdi-key-change font-size-16 align-middle me-1"></i> Manage Credentials</a>
+                            <a class="dropdown-item" href="account-rec.html"><i class="mdi mdi-ballot-recount font-size-16 align-middle me-1"></i> Manage Account Recovery</a>
+
+                            <a class="dropdown-item" href="index.html"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+
+
+                        <li>
+                            <a href="home.html">
+                                <i data-feather="home"></i>
+                                <span class="badge rounded-pill bg-soft-success text-success float-end"></span>
+                                <span data-key="t-dashboard">Home</span>
+                            </a>
+                        </li> <!--Home-->
+                        <li>
+                            <a href="#" class="has-arrow">
+                                <i class="mdi mdi-domain"></i>
+                                <span data-key="t-dashboard">
+                                    Domain Management
+                                </span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="new-domain.html"> Create Domain</a></li>
+                                <li><a href="modify-domain.html" data-key="t-product-detail"> Modify Domain</a></li>
+                                <li><a href="domain-management.html" data-key="t-orders">Manage Domain</a></li>
+
+                            </ul>
+                        </li>  <!--Domain-->
+                       
+                    </ul>
+
+
+                </div>
+            </div>
+            <!-- Sidebar -->
+        </div>
+
+
+
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid vh-100">
+
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6">
+                            <!-- card -->
+                            <div class="card card-h-10">
+                                <!-- card body -->
+                                <div class="card-body py-2">
+
+                                    <div class="col-12" data-bs-toggle="dropdown" data-bs-target="#ManagePermission" data-popper-placement="top-start">
+                                        <div class="row w-60">
+                                            <div class="col-2"><i class="mdi mdi-account-settings-outline fa-2x"></i></div>
+                                            <div class="my-auto col-8"><h5>Domain Management</h5><p>Manage Domain Management</p></div>
+                                            <div class="col-2 pr-0">
+
+                                                <i class="fas fa-angle-down fa-2x"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 dropdown-menu" id="Domain">
+
+                                        <button style="cursor:pointer" onclick="location.href='new-domain.html'" class="dropdown-item">Create Domain</button>
+
+                                        <button class="dropdown-item" style="cursor:pointer" onclick="location.href='modify-domain.html'" id="ModifyPermission">Modify Domain</button>
+                                        <button class="dropdown-item" style="cursor:pointer" id="active-deactive-domain">Activate/ Deactivate </button>
+
+                                        <button class="dropdown-item" id="DeletePermission" onclick="location.href='domain-management.html'" style="cursor:pointer">Manage Domain</button>
+
+
+                                    </div>
+
+                                </div>
+                                <!-- end card body -->
+                            </div><!-- end card -->
+                        </div><!--Domain end col -->
+
+                    </div>
+                </div>
+                <!-- container-fluid -->
+
+            </div>
+            <!-- End Page-content -->
+
+
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <script>document.write(new Date().getFullYear())</script> © XSM.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-end d-none d-sm-block">
+                            Design & Develop by <a href="https://www.3insys.com/" target="_blank" class="text-decoration-underline">3Insys</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end main content-->
+    </div><!-- END layout-wrapper -->
+    <!-- Right bar overlay-->
+
+
+    <div class="modal fade" id="mainModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="mainModal" aria-hidden="true">
+        <div class="position-fixed min-vh-100 min-vw-100 top-0 start-0 " style="backdrop-filter:blur(6px);"></div>
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="btn-group row g-3" role="group">
+                        <div class="col-md-4">
+                            <input class="btn-check" type="radio" name="Organization" id="Organizationbtn1" />
+                            <label class="d-block btn btn-outline-primary " role="button" for="Organizationbtn1">
+
+                                <div class="card-body"> 
+                                    Organization 1
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="btn-check" type="radio" name="Organization" id="Organizationbtn2" />
+                            <label class="d-block btn btn-outline-primary" role="button" for="Organizationbtn2">
+
+                                <div class="card-body">
+                                    Organization 2
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="btn-check" type="radio" name="Organization" id="Organizationbtn3" />
+                            <label class="d-block btn btn-outline-primary" role="button" for="Organizationbtn3" >
+
+                            <div class="card-body">
+                                Organization 3
+                            </div>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="btn-check" type="radio" name="Organization" id="Organizationbtn4" />
+                            <label class="d-block btn btn-outline-primary" role="button" for="Organizationbtn4" >
+
+                            <div class="card-body">
+                                Organization 4
+                            </div>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="btn-check" type="radio" name="Organization" id="Organizationbtn5" />
+                            <label class="d-block btn btn-outline-primary" role="button" for="Organizationbtn5" >
+
+                            <div class="card-body">
+                                Organization 5
+                            </div>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="btn-check" type="radio" name="Organization" id="Organizationbtn6" />
+                            <label class="d-block btn btn-outline-primary" role="button" for="Organizationbtn6" >
+
+                            <div class="card-body">
+                                Organization 6
+                            </div>
+                            </label>
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rightbar-overlay"></div>
+
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <!-- pace js -->
+    <script src="assets/libs/pace-js/pace.min.js"></script>
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/pages/datatables.init.js"></script>
+    <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+    <!-- Plugins js-->
+    <script src="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- dashboard init -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+    <!-- Sweet Alerts js -->
+    <!--<script src="assets/libs/sweetalert2/sweetalert2.js"></script>-->
+    <script src="assets/libs/sweetalert2/sweetalert2.js"></script>
+    <!--<script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>-->
+    <!-- Sweet alert init js-->
+    <!--<script src="assets/js/pages/sweetalert.init.js"></script>-->
+    <script src="assets/js/app.js"></script>
+    <!--<script src="assets/js/pages/swalt.js"></script>-->
+    <script>
+        function popupsave(headtitle, bodyhtml) {
+            Swal.fire({
+                title: headtitle,
+
+                html: bodyhtml,
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Saved!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+
+            })
+        };
+        function popupdelete(headtitle, bodyhtml, ts, td) {
+            Swal.fire({
+                title: headtitle,
+
+                html: bodyhtml,
+                showCancelButton: !0,
+                confirmButtonText: "Delete",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Deleted!",
+                        text: ts,
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+                        text: td,
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+
+
+
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+                    text: td,
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        }
+        //document.querySelector('#Assign-Groups-to-Users').addEventListener('click', function () {
+        //    popupsave(`Users to Organization `, `<div class="row">
+        //            <div class="col-md-12">
+        //                <label class="form-label">Domain Name</label>
+        //                <input type="text" class="form-control" disabled/>
+        //            </div>
+        //            <div class="col-md-12">
+        //                <label class="form-label">Organization Name</label>
+        //                <input class="form-control" type="text" />
+        //            </div>
+        //            <div class="col-md-12">
+        //                <p>All Users who are not part of Organization </p>
+        //                <select class="form-select">
+        //                    <option></option>
+        //                </select>
+        //            </div>
+        //        </div>`);
+        //})
+        document.querySelector("#delete-user").addEventListener('click', function () {
+            popupdelete(`Enter Username which you want to Delete`, `<div>
+
+                                                                                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search User...">
+                                                                                                <datalist id="datalistOptions">
+                                                                                                    <option value="User1">
+                                                                                                    <option value="User2">
+                                                                                                    <option value="User3">
+
+                                                                                                </datalist>
+                                                                                            </div>`, `Your User has been deleted.`, `Your User is safe...`)
+        });
+
+        document.querySelector("#delete-Group").addEventListener("click", function () {
+            popupdelete(`Enter Group Name which you want to Delete`, `<div>
+
+                                                                                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search Group Name...">
+                                                                                                <datalist id="datalistOptions">
+                                                                                                    <option value="Group1">
+                                                                                                    <option value="Group2">
+                                                                                                    <option value="Group3">
+
+                                                                                                </datalist>
+                                                                                            </div>`, `Your Group has been deleted.`, `Your Group is safe`)
+        });
+
+        document.querySelector("#delete-role").addEventListener("click", function () {
+            Swal.fire({
+                title: "Enter Role which you want to Delete",
+
+                html: `<div>
+
+                                                                                                <input class="form-control" list="deleterole" id="exampleDataList" placeholder="Search Role...">
+                                                                                                <datalist id="deleterole">
+                                                                                                    <option value="Role1">
+                                                                                                    <option value="Role2">
+                                                                                                    <option value="Role3">
+
+                                                                                                </datalist>
+                                                                                            </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Delete",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Deleted!",
+                        text: "Your Role has been deleted.",
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+                        text: "Your Role is safe",
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+
+
+
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+                    text: "Your Role is safe",
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+        document.querySelector("#delete-Application").addEventListener("click", function () {
+            Swal.fire({
+                title: "Enter Application which you want to Delete",
+
+                html: `<div>
+
+                                                                                                <input class="form-control" list="deleterole" id="exampleDataList" placeholder="Search Application...">
+                                                                                                <datalist id="deleterole">
+                                                                                                    <option value="Application1">
+                                                                                                    <option value="Application2">
+                                                                                                    <option value="Application3">
+
+                                                                                                </datalist>
+                                                                                            </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Delete",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Deleted!",
+                        text: "Your Application has been deleted.",
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+                        text: "Your Application is safe",
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+
+
+
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+                    text: "Your Application is safe",
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+        document.querySelector("#Delete-Permission").addEventListener("click", function () {
+            Swal.fire({
+                title: "Enter Permission which you want to Delete",
+
+                html: `<div>
+
+                                                                                                <input class="form-control" list="deleterole" id="exampleDataList" placeholder="Search Role...">
+                                                                                                <datalist id="deleterole">
+                                                                                                    <option value="Permission1">
+                                                                                                    <option value="Permission2">
+                                                                                                    <option value="Permission3">
+
+                                                                                                </datalist>
+                                                                                            </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Delete",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, delete it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Deleted!",
+                        text: "Your Permission has been deleted.",
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+                        text: "Your Permission is safe",
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+
+
+
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+                    text: "Your Application is safe",
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+        document.querySelector("#edit-user").addEventListener("click", function () {
+            Swal.fire({
+                title: "Enter Username which you want to Edit",
+
+                html: `<div>
+
+                                                                                                <input class="form-control" list="edituser" id="exampleDataList" placeholder="Search User...">
+                                                                                                <datalist id="edituser">
+                                                                                                    <option value="3insysabc1.com">
+                                                                                                    <option value="3insysabc2.com">
+                                                                                                    <option value="3insysabc3.com">
+
+                                                                                                </datalist>
+                                                                                            </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Edit",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, Edit it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Edited!",
+                        text: "Your User has been Edited.",
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+                        text: "Your User is safe",
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+
+
+
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+                    text: "Your User is safe",
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+        document.querySelector("#edit-role").addEventListener("click", function () {
+            Swal.fire({
+                title: "Enter Role which you want to Edit",
+
+                html: `<div>
+
+                                                                                                <input class="form-control" list="editrole" id="exampleDataList" placeholder="Search Role...">
+                                                                                                <datalist id="editrole">
+                                                                                                    <option value="Role1">
+                                                                                                    <option value="Role2">
+                                                                                                    <option value="Role3">
+
+                                                                                                </datalist>
+                                                                                            </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Edit",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, Edit it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Edited!",
+                        text: "Your Role been Assigned.",
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+                        text: "Your Role is safe",
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+
+
+
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+                    text: "Your Role is safe",
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+        document.querySelector("#assign-role-user").addEventListener("click", function () {
+            Swal.fire({
+                title: "Assign User to Roles",
+
+                html: `<div>
+<lable>Role</lable>
+                                                                                                <input class="form-control" list="assignroleuser" id="exampleDataList" placeholder="Search Role...">
+                                                                                                <datalist id="assignroleuser">
+                                                                                                    <option value="3insysabc1.com">
+                                                                                                    <option value="3insysabc2.com">
+                                                                                                    <option value="3insysabc3.com">
+
+                                                                                                </datalist>
+                                                                                            </div>
+<div class="form-group mb-0">
+                                                                                            <label class="col-form-label">User List:</label>
+
+                                                                                           <input type="search" list="roleList" class="form-control"  placeholder="User List">
+                                                                                            <datalist id="roleList" class="card dropdown-menu">
+
+                                                                                                <span style="overflow-y: scroll;max-height:calc(2em * 5)">
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc35.com</a></option>
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc36.com</a></option>
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc37.com</a></option>
+
+                                                                                               </span>
+                                                                                            </datalist>
+                                                                                        </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, Save it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Edited!",
+                        text: "Your Role been Assign.",
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+                        text: "Your Role is safe",
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+                    text: "Your Role is safe",
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+        document.querySelector("#assign-user-role").addEventListener("click", function () {
+            Swal.fire({
+                title: "Assign User to Role",
+
+                html: `<div>
+<lable>Role</lable>
+                                                                                                <input class="form-control" list="assignroleuser" id="exampleDataList" placeholder="Search Role...">
+                                                                                                <datalist id="assignroleuser">
+                                                                                                    <option value="3insysabc1.com">
+                                                                                                    <option value="3insysabc2.com">
+                                                                                                    <option value="3insysabc3.com">
+
+                                                                                                </datalist>
+                                                                                            </div>
+<div class="form-group mb-0">
+                                                                                            <label class="col-form-label">User List:</label>
+
+                                                                                           <input type="search" list="roleList" class="form-control"  placeholder="User List">
+                                                                                            <datalist id="roleList" class="card dropdown-menu">
+
+                                                                                                <span style="overflow-y: scroll;max-height:calc(2em * 5)">
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc35.com</a></option>
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc36.com</a></option>
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc37.com</a></option>
+
+                                                                                               </span>
+                                                                                            </datalist>
+                                                                                        </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, Save it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Saved!",
+
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+        document.querySelector("#assign-user-role").addEventListener("click", function () {
+            Swal.fire({
+                title: "Assign User to Role",
+
+                html: `<div>
+<lable>Role</lable>
+                                                                                                <input class="form-control" list="assignroleuser" id="exampleDataList" placeholder="Search Role...">
+                                                                                                <datalist id="assignroleuser">
+                                                                                                    <option value="3insysabc1.com">
+                                                                                                    <option value="3insysabc2.com">
+                                                                                                    <option value="3insysabc3.com">
+
+                                                                                                </datalist>
+                                                                                            </div>
+<div class="form-group mb-0">
+                                                                                            <label class="col-form-label">User List:</label>
+
+                                                                                           <input type="search" list="roleList" class="form-control"  placeholder="User List">
+                                                                                            <datalist id="roleList" class="card dropdown-menu">
+
+                                                                                                <span style="overflow-y: scroll;max-height:calc(2em * 5)">
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc35.com</a></option>
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc36.com</a></option>
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc37.com</a></option>
+
+                                                                                               </span>
+                                                                                            </datalist>
+                                                                                        </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, Save it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Saved!",
+
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+        document.querySelector("#assign-user-role").addEventListener("click", function () {
+            Swal.fire({
+                title: "Assign User to Roles",
+
+                html: `<div>
+<lable>Role</lable>
+                                                                                                <input class="form-control" list="assignroleuser" id="exampleDataList" placeholder="Search Role...">
+                                                                                                <datalist id="assignroleuser">
+                                                                                                    <option value="3insysabc1.com">
+                                                                                                    <option value="3insysabc2.com">
+                                                                                                    <option value="3insysabc3.com">
+
+                                                                                                </datalist>
+                                                                                            </div>
+<div class="form-group mb-0">
+                                                                                            <label class="col-form-label">User List:</label>
+
+                                                                                           <input type="search" list="roleList" class="form-control"  placeholder="User List">
+                                                                                            <datalist id="roleList" class="card dropdown-menu">
+
+                                                                                                <span style="overflow-y: scroll;max-height:calc(2em * 5)">
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc35.com</a></option>
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc36.com</a></option>
+                                                                                                <option><a href="#" class="dropdown-item">3insysabc37.com</a></option>
+
+                                                                                               </span>
+                                                                                            </datalist>
+                                                                                        </div>`,
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: !0,
+                    confirmButtonText: "Yes, Save it!",
+                    cancelButtonText: "No, cancel!",
+                    confirmButtonClass: "btn btn-success mt-2",
+                    cancelButtonClass: "btn btn-danger ms-2 mt-2",
+                    buttonsStyling: !1
+                }).then(function (e) {
+                    e.value ? Swal.fire({
+                        title: "Saved!",
+
+                        icon: "success",
+                        confirmButtonColor: "#1c84ee"
+                    }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                        title: "Cancelled",
+
+                        icon: "error",
+                        confirmButtonColor: "#1c84ee"
+                    })
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            })
+        });
+
+        document.querySelector("#assign-permission-role").addEventListener("click", function () {
+            Swal.fire({
+                title: "Assign Permission to Roles",
+
+                html: '<div class="swal2-html-container"  >Permission List </div>' +
+                    '<textarea id="roleList" class="swal2-textarea"></textarea>' +
+                    '<div class="swal2-html-container"  >Role List</div>' +
+                    '<textarea id="GroupList" class="swal2-textarea" ></textarea>',
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Saved!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+
+            })
+        });
+
+
+        document.querySelector("#Assign-Roles-to-Groups").addEventListener("click", function () {
+            Swal.fire({
+                title: "Assign Roles to Groups",
+
+                html: `<div class="swal2-html-container"  >Domain Name</div>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Domain Name" value="3insys.com" disabled>
+<div class="swal2-html-container"  >Organization Name</div>
+                     <input type="text" class="form-control" id="validationCustom01" placeholder="Organization Name" value="Organization1" disabled>
+<div class="swal2-html-container"  >Role List</div>
+                                           <select size="5" style="width:80%">
+<option>Organization Admin</option>
+<option>API Publisher</option>
+<option>API Consumer</option>
+<option>API Admin</option>
+<option>WebApp Admin</option>
+</select>
+                                            <div class="swal2-html-container"  >Group List</div>
+                                           <select size="5" style="width:80%">
+                            <option>Organization Admin Group</option>
+                            <option>API Management Group</option>
+                        </select>`,
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Saved!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+
+            })
+        });
+        document.querySelector("#Assign-Permission-to-Roles").addEventListener("click", function () {
+            Swal.fire({
+                title: "Assign Permission to Roles",
+
+                html: `<div class="swal2-html-container"  >Domain Name</div><input type="text" class="form-control" id="validationCustom01" placeholder="Domain Name" value="3insys.com" disabled><div class="swal2-html-container"  >Organization Name</div><input type="text" class="form-control" id="validationCustom01" placeholder="Organization Name" value="HR Department" disabled><div class="swal2-html-container"  >Permission List </div>
+                                        <select size="5" style="width:80%">
+<option>Read</option>
+<option>Update</option>
+<option>Delete</option>
+<option>Add</option>
+</select>
+                                        <div class="swal2-html-container"  >Role List</div>
+                                       <select size="5" style="width:80%">
+<option>Organization Admin</option>
+<option>API Publisher</option>
+<option>API Consumer</option>
+<option>API Admin</option>
+<option>WebApp Admin</option>
+</select>`,
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Saved!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+
+            })
+        });
+
+        document.querySelector("#Assign-Roles-to-Application").addEventListener("click", function () {
+            Swal.fire({
+                title: "Assign Roles to Application",
+
+                html: `<div class="swal2-html-container"  >Domain Name</div><input type="text" class="form-control" id="validationCustom01" placeholder="Domain Name" value="3insys.com" disabled><div class="swal2-html-container"  >Organization Name</div><input type="text" class="form-control" id="validationCustom01" placeholder="Organization Name" value="Organization1" disabled><div class="swal2-html-container"  >Application Name</div>
+                                        <select required class="swal2-html-container">
+                                                                                    <option value="">-- SELECT --</option>
+                                                                                    <option value="wr">--SELECT-1--</option>
+                                                                                    <option value="wr">--SELECT-2--</option>
+                                                                                    <option value="wr">--SELECT-3--</option>
+
+                                                                                </select>
+                                        <div class="swal2-html-container"  >Role List</div>
+                                        <select size="5" style="width:80%">
+                                        < option > Organization Admin</option>
+<option>API Publisher</option>
+<option>API Consumer</option>
+<option>API Admin</option>
+<option>WebApp Admin</option>
+</select`,
+                showCancelButton: !0,
+                confirmButtonText: "Save",
+                showLoaderOnConfirm: !0,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Saved!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+
+            })
+        });
+
+
+
+        document.querySelector("#active-deactive-domain").addEventListener("click", function () {
+            Swal.fire({
+                title: "Domain Management ",
+
+                html: `<p>Domain Name</p>
+                                                                                <input type="text"  class="swal2-input"/>
+<div class="swal2-html-container" >
+                                                                                <button class="btn btn-success mt-2" >Active</button>
+                                                                                <button class="btn btn-warning mt-2" >Deactive</button>`,
+                showCancelButton: !0,
+                showConfirmButton: !1,
+
+                showLoaderOnConfirm: !1,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Saved!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+
+            })
+        });
+        document.querySelector("#Activate-Deactivate-Organization").addEventListener("click", function () {
+            Swal.fire({
+                title: "Organization Management ",
+
+                html: `<p>Organization Name</p>
+                                                                                <input type="text"  class="swal2-input"/>
+<div class="swal2-html-container" >
+                                                                                <button class="btn btn-success mt-2" >Active</button>
+                                                                                <button class="btn btn-warning mt-2" >Deactive</button>`,
+                showCancelButton: !0,
+                showConfirmButton: !1,
+
+                showLoaderOnConfirm: !1,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Saved!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+
+            })
+        });
+        document.querySelector("#Activate-Deactivate-User").addEventListener("click", function () {
+            Swal.fire({
+                title: "User Management",
+
+                html: `<p>Username</p>
+                                                                                <input type="text"  class="swal2-input"/>
+<div class="swal2-html-container" >
+                                                                                <button class="btn btn-success mt-2" >Active</button>
+                                                                                <button class="btn btn-warning mt-2" >Deactive</button>`,
+                showCancelButton: !0,
+                showConfirmButton: !1,
+
+                showLoaderOnConfirm: !1,
+                confirmButtonColor: "#1c84ee",
+                cancelButtonColor: "#fd625e",
+
+                allowOutsideClick: !1
+            }).then(function (e) {
+                e.value ? Swal.fire({
+                    title: "Saved!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                }) : e.dismiss === Swal.DismissReason.cancel && Swal.fire({
+                    title: "Cancelled",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+
+            })
+        });
+
+
+
+    </script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#mainModal").modal('show');
+        });
+    </script>
+
+</body>
+
+</html>

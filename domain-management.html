@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Domain Management | 3Insys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="The Cross Integration Suite from 3Insys takes a 360-degree approach to SYSTEM, DATA, and SECURITY" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- preloader css -->
+    <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
+    <!-- Sweet Alert-->
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <style>
+        [data-class]::after {
+            content: "";
+            display: none !important;
+        }
+
+        [data-class]::before {
+            content: "";
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body data-topbar="dark">
+
+    <!-- <body data-layout="horizontal"> -->
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="home.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-icon.svg" alt="" height="42">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-sm-w.svg" alt="" height="45">
+                            </span>
+                        </a>
+
+                        <a href="home.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-icon.svg" alt="" height="42">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-sm-w.svg" alt="" height="45">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- App Search-->
+
+                </div>
+
+                <div class="row d-flex flex-grow-1" style="">
+                    <div class="col-xl-6 col-md-10">
+                        <form class="app-search p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="search" class="form-control w-100" placeholder="Search ..." aria-label="Search Result">
+
+                                    <button class="btn btn-primary d-sm-inline-block" type="submit"><i data-feather="search" class="icon-lg"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+
+
+
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item" id="mode-setting-btn">
+                            <i data-feather="moon" class="icon-lg layout-mode-dark"></i>
+                            <i data-feather="sun" class="icon-lg layout-mode-light"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" title="Notifications" class="btn header-item noti-icon position-relative" id="page-header-notifications-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i data-feather="bell" class="icon-lg"></i>
+                            <span class="badge bg-danger rounded-pill">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                             aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small text-reset text-decoration-underline"> Unread (2)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <!--<h6 class="mb-1">James Lemire</h6>-->
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">New Organization has been created.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>30 minutes ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#!" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <!--<h6 class="mb-1">James Lemire</h6>-->
+                                            <div class="font-size-13 text-muted">
+                                                <p class="mb-1">New Application has been onboarded.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" title="Organization" class="btn header-item noti-icon position-relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg><span class="badge bg-danger rounded-pill">1</span>
+                        </button>
+
+                    </div>
+                    <div class="dropdown d-flex">
+                        <button type="button" class="btn header-item bg-soft-light border-start border-end" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                 alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium">Super Admin</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="profile-mng.html"><i class="mdi mdi-clipboard-account-outline font-size-16 align-middle me-1"></i> My Account</a>
+                            <a class="dropdown-item" href="credentials-mng.html"><i class="mdi mdi-key-change font-size-16 align-middle me-1"></i> Manage Credentials</a>
+                            <a class="dropdown-item" href="account-rec.html"><i class="mdi mdi-ballot-recount font-size-16 align-middle me-1"></i> Manage Account Recovery</a>
+
+                            <a class="dropdown-item" href="index.html"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+
+
+                        <li>
+                            <a href="home.html">
+                                <i data-feather="home"></i>
+                                <span class="badge rounded-pill bg-soft-success text-success float-end"></span>
+                                <span data-key="t-dashboard">Home</span>
+                            </a>
+                        </li> <!--Home-->
+                        <li>
+                            <a href="#" class="has-arrow">
+                                <i class="mdi mdi-domain"></i>
+                                <span data-key="t-dashboard">
+                                    Domain Management
+                                </span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="new-domain.html"> Create Domain</a></li>
+                                <li><a href="modify-domain.html" data-key="t-product-detail"> Modify Domain</a></li>
+                                <li><a href="domain-management.html" data-key="t-orders">Manage Domain</a></li>
+
+                            </ul>
+                        </li>  <!--Domain-->
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <!-- Sidebar -->
+        </div>
+
+
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <!--<h4 class="mb-sm-0 font-size-18">DataTables</h4>-->
+
+                                <div class="page-title-left">
+                                    <ol class="breadcrumb m-0">
+                                        <!--<li class="breadcrumb-item"><a href="home.html">Home</a></li>-->
+                                        <li class="breadcrumb-item"><a href="#">Domain Management</a></li>
+                                        <li class="breadcrumb-item active">Manage Domain</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-end">
+                                <div class="page-title-right">
+                                    <button type="button" class="btn btn-link waves-effect waves-light" onclick="location.href='new-domain.html'">
+                                        <i class="bx bx-plus font-size-16 align-middle me-2"></i> Add Domain
+                                    </button>
+
+                                    <!--<button type="button" class="btn btn-link waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#BulkUploadDomains">
+                                        <i class="bx bx-refresh font-size-16 align-middle me-2"></i> Bulk Upload Domains
+                                    </button>-->
+                                    <!--<div class="modal fade" id="BulkUploadDomains" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Bulk Upload Domains</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="input-group">
+                                                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+
+                                                    <button type="button" class="btn btn-primary"> Upload</button><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                    <button type="button" class="btn btn-link waves-effect waves-light">
+                                        <i class="bx bx-download font-size-16 align-middle me-2"></i> Download Domains
+                                    </button>
+                                    <!--<button type="button" class="btn btn-link waves-effect waves-light " data-bs-toggle="dropdown" data-bs-target="#moreopt">
+                                        More<i class="arrow-down font-size-16 align-middle me-2"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu" id="moreopt">
+                                        <button type="button" class="dropdown-item" id="userActive">Active</button>
+                                        <button type="button" class="dropdown-item" id="userDeactive">Deactive</button>
+                                        <button type="button" class="dropdown-item" id="userdelete">Delete</button>
+                                    </div>-->
+
+                                    <!--<button type="button" class="d-none btn btn-link waves-effect waves-light">
+                                        <i class="bx bx-trash font-size-16 align-middle me-2"></i> Delete
+                                    </button>
+
+                                    <button type="button" class=" btn btn-link waves-effect waves-light" id="userActive">
+                                        <i class="bx bx-check font-size-16 align-middle me-2"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-link waves-effect waves-light" id="userDeactive">
+                                        <i class="bx bx-block font-size-16 align-middle me-2"></i>
+                                    </button>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+
+                                <div class="card-body table-responsive">
+
+                                    <table id="datatable" class="table table-editable table-bordered table-nowrap align-middle ">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th style="width:5%;" data-field-add=""></th>
+                                                <th>
+
+                                                    Domain Name
+                                                </th>
+
+                                                <th data-field-add="">
+
+                                                    Domain Description
+                                                </th>
+                                                <th data-field-add="">
+
+                                                    Domain Status
+                                                </th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Mobile No</th>
+                                                <th>Email</th>
+                                                <th>Associated Organization</th>
+                                                
+                                                <th data-field-add="Created-Date-th" class="d-none">Created Date</th>
+                                                <th data-field-add="Created-By-th" class="d-none">Created By</th>
+                                                <th data-field-add="Modified-Date-th" class="d-none">Modified Date </th>
+                                                <th data-field-add="Modified-By-th" class="d-none">Modified By</th>
+                                               
+                                                <th data-class="no-sort" data-field-add="">
+
+                                                    Edit
+                                                </th>
+                                                <th data-class="no-sort" data-field-add="">
+
+                                                    Delete
+
+                                                </th>
+                                                <th style="width:5px" data-class="no-sort" class="dropdown dropstart">
+                                                    <a class="link-secondary" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="mdi mdi-filter"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink" data-field-click="">
+                                                        <li><input type="checkbox" name="name" value="" onclick="fieldshow1(this)" /><label class="p-1">created date</label></li>
+                                                        <li><input type="checkbox" name="name" value="" onclick="fieldshow2(this)" /><label class="p-1">created by</label></li>
+                                                        <li><input type="checkbox" name="name" value="" onclick="fieldshow3(this)" /><label class="p-1">modified date</label> </li>
+                                                        <li><input type="checkbox" name="name" value="" onclick="fieldshow4(this)" /><label class="p-1">modified by</label> </li>
+
+                                                    </ul>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-id="1">
+                                                <td style="width:5%;text-align:center;"><input type="checkbox" class="form-check-input" id="invalidCheck" style="height:20px;width:20px;"></td>
+                                                <td data-field="E-mail">3insys.com</td>
+
+                                                <td data-field="description">Description</td>
+
+                                                <td data-field="status">Active (Few Minutes ago)</td>
+                                                <td>Sharath </td>
+                                                <td> Chakali</td>
+                                                <td>98765 43210</td>
+                                                <td>sharath.chakali@3insys.com</td>
+                                                <td><a href="#orglist" data-bs-toggle="modal">Organization1</a></td>
+                                                <td data-field-add="Created-Date-td" class="d-none">01/01/2022</td>
+                                                <td data-field-add="Created-By-td" class="d-none">Admin</td>
+                                                <td data-field-add="Modified-Date-td" class="d-none">01/01/2022</td>
+                                                <td data-field-add="Modified-By-td" class="d-none">Admin</td>
+
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm edit" href="modify-domain.html" title="Edit">
+                                                        <i class="fas fa-pencil-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm delete" title="Delete" data-deletebtn>
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr data-id="2">
+                                                <td style="width:5%;text-align:center;"><input type="checkbox" class="form-check-input" id="invalidCheck" style="height:20px;width:20px;"></td>
+                                                <td data-field="E-mail">itron.com</td>
+
+                                                <td data-field="description">Description</td>
+
+
+                                                <td data-field="status">Active (Few Minutes ago)</td>
+                                                <td>Thejas </td>
+                                                <td> Veerathal</td>
+                                                <td>98765 43210</td>
+                                                <td>thejas.veerathal@3insys.com</td>
+                                                <td><a href="#orglist" data-bs-toggle="modal">Organization2</a></td>
+                                                <td data-field-add="Created-Date-td" class="d-none">01/01/2022</td>
+                                                <td data-field-add="Created-By-td" class="d-none">Admin</td>
+                                                <td data-field-add="Modified-Date-td" class="d-none">01/01/2022</td>
+                                                <td data-field-add="Modified-By-td" class="d-none">Admin</td>
+
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm edit" href="modify-domain.html" title="Edit">
+                                                        <i class="fas fa-pencil-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm delete" title="Delete" data-deletebtn>
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr data-id="3">
+                                                <td style="width:5%;text-align:center;"><input type="checkbox" class="form-check-input" id="invalidCheck" style="height:20px;width:20px;"></td>
+                                                <td data-field="E-mail">dwp.com</td>
+
+                                                <td data-field="description">Description</td>
+
+
+                                                <td data-field="status">Active (Few Minutes ago)</td>
+                                                <td>Sharath </td>
+                                                <td> Chakali</td>
+                                                <td>98765 43210</td>
+                                                <td>sharath.chakali@3insys.com</td>
+                                                <td><a href="#orglist" data-bs-toggle="modal">Organization3</a></td>
+                                                <td data-field-add="Created-Date-td" class="d-none">01/01/2022</td>
+                                                <td data-field-add="Created-By-td" class="d-none">Admin</td>
+                                                <td data-field-add="Modified-Date-td" class="d-none">01/01/2022</td>
+                                                <td data-field-add="Modified-By-td" class="d-none">Admin</td>
+                                                
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm edit" href="modify-domain.html" title="Edit">
+                                                        <i class="fas fa-pencil-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm delete" title="Delete" data-deletebtn>
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr data-id="2">
+                                                <td style="width:5%;text-align:center;"><input type="checkbox" class="form-check-input" id="invalidCheck" style="height:20px;width:20px;"></td>
+                                                <td data-field="E-mail">oms.com</td>
+
+                                                <td data-field="description">Description</td>
+                                                <td data-field="status">Active (Few Minutes ago)</td>
+
+                                                
+                                                <td>Thejas </td>
+                                                <td> Veerathal</td>
+                                                <td>98765 43210</td>
+                                                <td>thejas.veerathal@3insys.com</td>
+                                                <td><a href="#orglist" data-bs-toggle="modal">Organization4</a></td>
+
+                                                <td data-field-add="Created-Date-td" class="d-none">01/01/2022</td>
+                                                <td data-field-add="Created-By-td" class="d-none">Admin</td>
+                                                <td data-field-add="Modified-Date-td" class="d-none">01/01/2022</td>
+                                                <td data-field-add="Modified-By-td" class="d-none">Admin</td>
+                                                
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm edit" href="modify-domain.html" title="Edit">
+                                                        <i class="fas fa-pencil-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-outline-secondary btn-sm delete" title="Delete" data-deletebtn>
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            2022 © XSM.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by <a href="https://www.3insys.com/" target="_blank" class="text-decoration-underline">3Insys</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- Right bar overlay-->
+    <div class="modal fade" id="orglist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Associated Organization</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">Domain</label>
+                                <input type="text" class="form-control" value="3insys.com" disabled />
+                            </div>
+                            <div class="mb-3">
+                                <p class="mb-1">Organization Name</p>
+                                <!--<input type="text" class="form-control" list="selectorg" />-->
+                                <select id="selectorg" class="form-select" size="5">
+                                    <option >HR Department</option>
+                                    <option>IT Department</option>
+                                    <option selected>Operational Department</option>
+                                    <option>Finance Department</option>
+                                    <option>System Administration Department</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <!--<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="rightbar-overlay"></div>
+
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <!-- pace js -->
+    <script src="assets/libs/pace-js/pace.min.js"></script>
+
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+
+
+    <!-- Datatable init js -->
+    <!--<script src="assets/js/pages/datatables.init.js"></script>-->
+
+    <script src="assets/libs/sweetalert2/sweetalert2.js"></script>
+    <!--<script src="assets/js/pages/table-editable.int.js"></script>-->
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () { $("#datatable").DataTable(), $("#datatable-buttons").DataTable({ lengthChange: !1, buttons: ["copy", "excel", "pdf", "colvis"] }).buttons().container().appendTo("#datatable-buttons_wrapper .col-md-6:eq(0)"), $(".dataTables_length select").addClass("form-select form-select-sm") });</script>
+    <script>
+        function fieldshow1(chk) {
+
+            var fieldth1 = document.querySelector('[data-field-add=Created-Date-th]');
+            var fieldtd2 = document.querySelectorAll('[data-field-add=Created-Date-td]');
+            chk.checked ? fieldth1.classList.remove("d-none") : fieldth1.classList.add("d-none");
+            for (var i = 0; i <= fieldtd2.length; i++) {
+                chk.checked ? fieldtd2[i].classList.remove("d-none") : fieldtd2[i].classList.add("d-none");
+            }
+        }
+        function fieldshow2(chk) {
+
+            var fieldth1 = document.querySelector('[data-field-add=Created-By-th]');
+            var fieldtd2 = document.querySelectorAll('[data-field-add=Created-By-td]');
+            chk.checked ? fieldth1.classList.remove("d-none") : fieldth1.classList.add("d-none");
+            for (var i = 0; i <= fieldtd2.length; i++) {
+                chk.checked ? fieldtd2[i].classList.remove("d-none") : fieldtd2[i].classList.add("d-none");
+            }
+
+        }
+        function fieldshow3(chk) {
+
+            var fieldth1 = document.querySelector('[data-field-add=Modified-Date-th]');
+            var fieldtd2 = document.querySelectorAll('[data-field-add=Modified-Date-td]');
+            chk.checked ? fieldth1.classList.remove("d-none") : fieldth1.classList.add("d-none");
+            for (var i = 0; i <= fieldtd2.length; i++) {
+                chk.checked ? fieldtd2[i].classList.remove("d-none") : fieldtd2[i].classList.add("d-none");
+            }
+
+        }
+        function fieldshow4(chk) {
+
+            var fieldth1 = document.querySelector('[data-field-add=Modified-By-th]');
+            var fieldtd2 = document.querySelectorAll('[data-field-add=Modified-By-td]');
+            chk.checked ? fieldth1.classList.remove("d-none") : fieldth1.classList.add("d-none");
+
+            for (var i = 0; i <= fieldtd2.length; i++) {
+                chk.checked ? fieldtd2[i].classList.remove("d-none") : fieldtd2[i].classList.add("d-none");
+            }
+        }
+
+
+    </script>
+    <script>
+        document.querySelector("#userActive").addEventListener("click", function () {
+            Swal.fire({
+                title: "Active!",
+
+                icon: "success",
+                confirmButtonColor: "#1c84ee"
+            })
+        });
+        document.querySelector("#userDeactive").addEventListener("click", function () {
+            Swal.fire({
+                title: "Deactive!",
+
+                icon: "error",
+                confirmButtonColor: "#1c84ee"
+            })
+        });
+        document.querySelector("#userdelete").addEventListener("click", function () {
+            Swal.fire({
+                title: "Delete!",
+
+                icon: "error",
+                confirmButtonColor: "#1c84ee"
+            })
+        });
+
+        const deletebtn = document.querySelectorAll("[data-deletebtn]");
+        for (var i = 0; i <= deletebtn.length; i++) {
+            deletebtn[i].addEventListener("click", function () {
+                Swal.fire({
+                    title: "Delete!",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            });
+        }
+
+        function onoff(i) {
+
+            if (i == false) {
+                Swal.fire({
+                    title: "Active!",
+
+                    icon: "success",
+                    confirmButtonColor: "#1c84ee"
+                })
+            } else {
+                Swal.fire({
+                    title: "Deactive!",
+
+                    icon: "error",
+                    confirmButtonColor: "#1c84ee"
+                })
+            }
+        }
+    </script>
+
+</body>
+
+</html>
